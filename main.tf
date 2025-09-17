@@ -134,7 +134,6 @@ resource "aws_elasticache_replication_group" "this" {
 
 locals {
   create_global_replication_group = var.create_primary_global_replication_group || var.create_secondary_global_replication_group
-
 }
 
 resource "aws_elasticache_global_replication_group" "this" {
